@@ -9,6 +9,7 @@ let aumentosAgosto= 1.24
 function aumentos(planes) {
     planes *=aumentosAgosto
 }
+
    
 //Datos del plan
 
