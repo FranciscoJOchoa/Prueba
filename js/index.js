@@ -1,24 +1,49 @@
+//Bienvenida
+
 let nombreCompleto = prompt("Ingresa tu nombre y apellido, por favor:")
-let calculadora = confirm ("Buenos días vamos a ver que bonificaciones tenemos disponibles según tu plan "  +  nombreCompleto)
-let plan = prompt("¿Cual es el código de tu plan aci25; aci26; aci27?")
+alert("Buenos días vamos a ver que bonificaciones tenemos disponibles según tu plan " + nombreCompleto)
 
-if (plan === "aci25") {
-    confirm("Tenes disponible un 60% de bonificación, ¿lo queres?")
+//Aumentos en los meses siguientes
+let aumentosAgosto= 1.24
 
+function aumentos(planes) {
+    planes *=aumentosAgosto
 }
-if (plan === "aci26") {
-        confirm("Tenes disponible un 70% de bonificación, ¿lo queres?")
-}
-if (plan === "aci27") {
-    confirm("Tenes disponible un 80% de bonificación, ¿lo queres?")
-}   
+   
+//Datos del plan
 
-function calcular(plan, boni1) {
-    confirm("Resultado", plan * boni1)
-}
+let numero = parseFloat(prompt("Ingresa el monto total de tu plan:"))
+let porcentaje = parseFloat(prompt("Ingresa el % que queres tener(60, 70, 80):"))
+let meses = alert("Te sumamos el aumento de Agosto, impuesto por ENACOM")
 
-// ACA ESTOY PERDIDO, SI EL CLIENTE CONFIRMA EL % DE DESCUENTO COMO HAGO PARA QUE LE SALGA DESPUES EL VALOR REAL DEL PLAN
-// EN VARIABLE LE PUSE LOS PRECIOS DE LOS PLANES.
+numero = aumentos(numero)
+
+let resultado = (numero - (numero * porcentaje / 100))  
+alert ("Tu plan va tener un costo total de: " + resultado )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
